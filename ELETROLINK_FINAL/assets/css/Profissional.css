@@ -1,0 +1,288 @@
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: #f7f9f8;
+            font-family: Arial, sans-serif;
+        }
+
+        /* BANNER */
+
+        .professional-hero {
+            background: linear-gradient(120deg, #183b32, #16a36a);
+            padding: 65px 8%;
+            color: white;
+            text-align: center;
+        }
+
+        .professional-hero h1 {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .professional-hero p {
+            font-size: 17px;
+            max-width: 650px;
+            margin: auto;
+            line-height: 1.6;
+        }
+
+        /* PESQUISA */
+
+        .search-section {
+            max-width: 1000px;
+            margin: -30px auto 45px;
+            padding: 25px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 18px rgba(0,0,0,0.09);
+            position: relative;
+        }
+
+        .search-section h2 {
+            color: #183b32;
+            margin-bottom: 20px;
+            font-size: 21px;
+        }
+
+        .search-fields {
+            display: flex;
+            gap: 15px;
+        }
+
+        .search-input {
+            flex: 1;
+            position: relative;
+        }
+
+        .search-input i {
+            position: absolute;
+            left: 15px;
+            top: 17px;
+            color: #16a36a;
+        }
+
+        .search-input input,
+        .search-fields select {
+            width: 100%;
+            padding: 15px 15px 15px 42px;
+            border: 1px solid #ddd;
+            border-radius: 7px;
+            outline: none;
+            font-size: 14px;
+        }
+
+        .search-fields select {
+            padding-left: 15px;
+            max-width: 240px;
+            background: white;
+        }
+
+        .search-input input:focus,
+        .search-fields select:focus {
+            border-color: #16a36a;
+        }
+
+        /* PROFISSIONAIS */
+
+        .professionals-section {
+            padding: 0 8% 70px;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+            gap: 15px;
+        }
+
+        .section-header h2 {
+            color: #183b32;
+            font-size: 27px;
+        }
+
+        .section-header span {
+            color: #777;
+            font-size: 14px;
+        }
+
+        .professionals-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 22px;
+        }
+
+        .professional-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.07);
+            transition: 0.3s;
+        }
+
+        .professional-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+        }
+
+        .professional-image {
+            height: 190px;
+            position: relative;
+        }
+
+        .professional-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .available {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            background: #e2f8ec;
+            color: #16834f;
+            padding: 6px 10px;
+            font-size: 11px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        .professional-info {
+            padding: 18px;
+        }
+
+        .professional-info h3 {
+            color: #183b32;
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        .specialty {
+            color: #16a36a;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .professional-details {
+            color: #777;
+            font-size: 13px;
+            line-height: 2;
+        }
+
+        .professional-details i {
+            color: #16a36a;
+            width: 19px;
+        }
+
+        .rating {
+            margin: 12px 0;
+            color: #f0ad24;
+            font-size: 14px;
+        }
+
+        .rating span {
+            color: #555;
+            margin-left: 5px;
+        }
+
+        .professional-button {
+            display: block;
+            width: 100%;
+            background: #16a36a;
+            color: white;
+            text-align: center;
+            padding: 12px;
+            border-radius: 7px;
+            text-decoration: none;
+            margin-top: 15px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .professional-button:hover {
+            background: #128454;
+        }
+
+        .no-results {
+            display: none;
+            text-align: center;
+            padding: 40px;
+            color: #777;
+            grid-column: 1 / -1;
+        }
+
+        /* CHAMADA FINAL */
+
+        .join-section {
+            background: #edf5f0;
+            padding: 55px 8%;
+            text-align: center;
+        }
+
+        .join-section h2 {
+            color: #183b32;
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .join-section p {
+            color: #666;
+            margin-bottom: 25px;
+        }
+
+        .join-button {
+            display: inline-block;
+            background: #16a36a;
+            color: white;
+            padding: 14px 25px;
+            text-decoration: none;
+            border-radius: 7px;
+            font-weight: bold;
+        }
+
+        /* RESPONSIVIDADE */
+
+        @media(max-width: 1000px) {
+
+            .professionals-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        }
+
+        @media(max-width: 600px) {
+
+            .professional-hero h1 {
+                font-size: 29px;
+            }
+
+            .search-section {
+                margin: -20px 15px 35px;
+            }
+
+            .search-fields {
+                flex-direction: column;
+            }
+
+            .search-fields select {
+                max-width: 100%;
+            }
+
+            .professionals-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-header {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+
+        }
+
+    

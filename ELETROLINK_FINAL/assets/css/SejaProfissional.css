@@ -1,0 +1,348 @@
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: #f7f9f8;
+            font-family: Arial, sans-serif;
+        }
+
+        /* BANNER PRINCIPAL */
+
+        .professional-banner {
+            min-height: 460px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 60px 8%;
+            gap: 40px;
+            background: #edf5f0;
+        }
+
+        .banner-content {
+            max-width: 540px;
+        }
+
+        .banner-content h1 {
+            color: #183b32;
+            font-size: 40px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .banner-content h1 span {
+            color: #16a36a;
+        }
+
+        .banner-content p {
+            color: #555;
+            font-size: 17px;
+            line-height: 1.7;
+            margin-bottom: 28px;
+        }
+
+        .banner-button {
+            display: inline-block;
+            padding: 14px 25px;
+            background: #16a36a;
+            color: white;
+            border-radius: 7px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: .3s;
+        }
+
+        .banner-button:hover {
+            background: #128454;
+        }
+
+        .banner-image {
+            width: 48%;
+        }
+
+        .banner-image img {
+            width: 100%;
+            height: 340px;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        /* BENEFÍCIOS */
+
+        .benefits-section {
+            padding: 70px 8%;
+            text-align: center;
+        }
+
+        .section-title {
+            color: #183b32;
+            font-size: 30px;
+            margin-bottom: 12px;
+        }
+
+        .section-description {
+            color: #777;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 22px;
+        }
+
+        .benefit-card {
+            background: white;
+            padding: 30px 20px;
+            border-radius: 12px;
+            box-shadow: 0 3px 15px rgba(0,0,0,.07);
+            transition: .3s;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .benefit-card i {
+            font-size: 35px;
+            color: #16a36a;
+            margin-bottom: 20px;
+        }
+
+        .benefit-card h3 {
+            color: #183b32;
+            font-size: 18px;
+            margin-bottom: 12px;
+        }
+
+        .benefit-card p {
+            color: #777;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        /* COMO FUNCIONA */
+
+        .how-section {
+            background: #edf5f0;
+            padding: 65px 8%;
+            text-align: center;
+        }
+
+        .steps-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .step {
+            background: white;
+            padding: 30px 20px;
+            border-radius: 12px;
+        }
+
+        .step-number {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #16a36a;
+            color: white;
+            font-size: 21px;
+            font-weight: bold;
+            border-radius: 50%;
+            margin: 0 auto 18px;
+        }
+
+        .step h3 {
+            color: #183b32;
+            margin-bottom: 12px;
+        }
+
+        .step p {
+            color: #777;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        /* FORMULÁRIO */
+
+        .register-section {
+            padding: 70px 8%;
+        }
+
+        .register-container {
+            max-width: 750px;
+            margin: auto;
+            background: white;
+            padding: 35px;
+            border-radius: 14px;
+            box-shadow: 0 3px 18px rgba(0,0,0,.08);
+        }
+
+        .register-container h2 {
+            color: #183b32;
+            text-align: center;
+            margin-bottom: 12px;
+        }
+
+        .register-container > p {
+            color: #777;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            color: #333;
+            font-weight: bold;
+            margin-bottom: 9px;
+            font-size: 14px;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 13px;
+            border: 1px solid #ddd;
+            border-radius: 7px;
+            outline: none;
+            font-size: 14px;
+            font-family: Arial, sans-serif;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: #16a36a;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 110px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 18px;
+        }
+
+        .submit-button {
+            width: 100%;
+            padding: 15px;
+            background: #16a36a;
+            color: white;
+            border: none;
+            border-radius: 7px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: .3s;
+        }
+
+        .submit-button:hover {
+            background: #128454;
+        }
+
+        .form-message {
+            display: none;
+            margin-top: 18px;
+            padding: 13px;
+            background: #e2f8ec;
+            color: #16834f;
+            border-radius: 7px;
+            text-align: center;
+        }
+
+        /* CHAMADA FINAL */
+
+        .final-section {
+            background: #183b32;
+            padding: 55px 8%;
+            text-align: center;
+            color: white;
+        }
+
+        .final-section h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .final-section p {
+            line-height: 1.7;
+            margin-bottom: 25px;
+            color: #e0eee7;
+        }
+
+        .final-section a {
+            display: inline-block;
+            padding: 14px 25px;
+            background: #16a36a;
+            color: white;
+            text-decoration: none;
+            border-radius: 7px;
+            font-weight: bold;
+        }
+
+        /* RESPONSIVIDADE */
+
+        @media(max-width: 900px) {
+
+            .benefits-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        }
+
+        @media(max-width: 700px) {
+
+            .professional-banner {
+                flex-direction: column;
+                padding: 45px 6%;
+            }
+
+            .banner-content h1 {
+                font-size: 32px;
+            }
+
+            .banner-image {
+                width: 100%;
+            }
+
+            .banner-image img {
+                height: 260px;
+            }
+
+            .steps-container {
+                grid-template-columns: 1fr;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+                gap: 0;
+            }
+
+            .register-container {
+                padding: 25px 18px;
+            }
+
+        }
+
+        @media(max-width: 480px) {
+
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+
+        }
